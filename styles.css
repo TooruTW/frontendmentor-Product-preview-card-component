@@ -1,0 +1,137 @@
+
+.fraunces {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    font-size: 14px;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.container{
+    border-radius: 20px;
+    border:1px solid hsl(30, 9%, 90%);
+    max-width: 40rem;
+    height: 30rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    width:50%;
+    height: 100%;
+}
+
+.img{
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+}
+
+.content{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subtitle{
+    color:hsl(158, 36%, 37%);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+.describe{
+    color:hsl(158, 36%, 37%);
+    line-height: 1.5;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.currentPrice{
+    font-size: 2.5rem;
+}
+.fullPrice{
+    color: hsla(158, 36.20%, 36.90%, 0.66);
+    text-decoration: line-through;
+}
+button{
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color:hsl(158, 36%, 37%);
+    padding: 1rem;
+}
+
+.cart{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+
+
+.attribution{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        margin:1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .card{
+        background-color: hsl(0, 0%, 100%);
+        width:100%;
+        height: auto;
+    }
+    .img{
+        height: 35%;
+        background-image: url("./images/image-product-mobile.jpg");
+    }
+    .content{
+        height: 65%;
+    }
+    .attribution{
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+}
